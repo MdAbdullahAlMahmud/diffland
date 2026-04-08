@@ -1,0 +1,23 @@
+{
+  "name": "@diffland/core",
+  "version": "0.0.0",
+  "description": "Pure core engine for diffland — parses diffs and builds the DiffLandData contract. Zero I/O.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "eslint src",
+    "typecheck": "tsc -b --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  }
+}

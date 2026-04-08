@@ -1,0 +1,25 @@
+name: View proposal
+description: Propose a new visualization view
+labels: [view-proposal]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The view
+      description: What does it show? What question does it answer?
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Sketch or reference
+      description: Paste an image, link a tool, or describe the visual
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data needed
+      description: Can it be built from DiffLandData as-is, or does the schema need to extend?
+    validations:
+      required: true

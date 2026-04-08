@@ -1,0 +1,24 @@
+{
+  "name": "diffland",
+  "version": "0.0.0",
+  "description": "Spatial git diff visualizer — CLI entry point.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "diffland": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "eslint src",
+    "typecheck": "tsc -b --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@diffland/core": "workspace:*",
+    "@diffland/git-node": "workspace:*"
+  }
+}

@@ -1,0 +1,13 @@
+# Default owners for everything
+*                               @diffland/maintainers
+
+# Core must be reviewed carefully — it's the data contract
+/packages/core/                 @diffland/core-maintainers
+/packages/core/src/schema/      @diffland/core-maintainers
+
+# Design system changes need a UI maintainer
+/packages/ui/src/theme/         @diffland/ui-maintainers
+
+# Architectural decisions
+/docs/adr/                      @diffland/maintainers
+/DIFFLAND_ARCHITECTURE.md       @diffland/maintainers
