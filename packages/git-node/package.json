@@ -12,7 +12,9 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -b",
     "test": "vitest run",
@@ -21,6 +23,8 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "@diffland/core": "workspace:*"
+    "@diffland/core": "workspace:*",
+    "simple-git": "^3.27.0",
+    "fast-glob": "^3.3.2"
   }
 }

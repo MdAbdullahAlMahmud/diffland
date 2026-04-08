@@ -1,12 +1,9 @@
 /**
  * @diffland/git-node — Node.js I/O providers.
  *
- * This is one of only two places in the repo where `child_process` and `fs`
- * may be imported (the other is `@diffland/git-iso` for the browser).
+ * One of only two places in the repo where `child_process` / `fs` imports
+ * are permitted (the other is `@diffland/git-iso`). Enforced via eslint
+ * boundary rules.
  */
-
-import { hello as coreHello } from '@diffland/core';
-
-export function hello(): string {
-  return `${coreHello()} + git-node`;
-}
+export { createNodeGitProvider, type NodeGitOptions } from './git.js';
+export { createNodeFsProvider, type NodeFsOptions } from './fs.js';
